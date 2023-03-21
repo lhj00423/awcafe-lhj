@@ -35,9 +35,9 @@ app.post("/upload", upload.single('img'),(req,res)=>{
 })
 //mysql 연결하기 
 const conn = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "1234",
+    host: "awcafe.cgphqgynrl9a.ap-northeast-2.rds.amazonaws.com",
+    user: "admin",
+    password: "hyesung1009*",
     port: "3306",
     database: "awcafe" 
 })
@@ -95,7 +95,7 @@ app.post("/login",async (req,res)=> {
                 }else{
                     console.log(err);
                     res.send("실패");
-                }
+                } 
             })
         }else{
             console.log("데이터가 없습니다.");
