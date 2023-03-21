@@ -35,7 +35,7 @@ app.post("/upload", upload.single('img'),(req,res)=>{
 })
 //mysql 연결하기 
 const conn = mysql.createConnection({
-    host: "awcafe.cgphqgynrl9a.ap-northeast-2.rds.amazonaws.com",
+    host: "localhost",
     user: "admin",
     password: "hyesung1009*",
     port: "3306",
